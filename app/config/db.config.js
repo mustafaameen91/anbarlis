@@ -3,7 +3,7 @@
 module.exports = {
    HOST: "localhost",
    USER: "root",
-   PASSWORD: "",
+   PASSWORD: "ahmed1234",
    DB: "lis",
    PORT: 3306,
 };
