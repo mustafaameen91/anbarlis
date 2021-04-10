@@ -9,7 +9,7 @@ module.exports = (app) => {
 
    app.put("/api/patientResult/:id", patientResult.update);
 
-   // app.delete("/api/patientResult/:id", patientResult.delete);
+   app.delete("/api/patientResult/:id", patientResult.delete);
 
    app.delete("/api/patientResults", patientResult.deleteAll);
 };

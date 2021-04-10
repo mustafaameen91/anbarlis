@@ -13,7 +13,7 @@ module.exports = (app) => {
 
    app.put("/api/patientTest/:id", patientTest.update);
 
-   // app.delete("/api/patientTest/:id", patientTest.delete);
+   app.delete("/api/patientTest/:id", patientTest.delete);
 
    app.delete("/api/patientTests", patientTest.deleteAll);
 };
