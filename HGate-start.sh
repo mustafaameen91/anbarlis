@@ -18,7 +18,7 @@ Script for run HGate, usage: ${0##*/} --private="data..." --public="data..."
     -h, --help                  display this help and exit
     --private=""                private key
     --public=""                 public key
-    --address=<host:port>       default: "0.0.0.0:5555"
+    --address=<host:port>       default: "localhost:5555"
 EOF
 }
 
