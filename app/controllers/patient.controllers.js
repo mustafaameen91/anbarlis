@@ -253,7 +253,7 @@ exports.findTestPhoto = async (req, res) => {
       bwipjs.toBuffer(
          {
             bcid: "qrcode",
-            text: `http://anbar.smart-lis.com/api/certificates/${reportName}.pdf`,
+            text: `http://smartlis.co/api/certificates/${reportName}.pdf`,
             scale: 4,
             height: 10,
             width: 10,
