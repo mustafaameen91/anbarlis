@@ -1,0 +1,16 @@
+log:
+  disable_sentry: true
+  level: info
+keys:
+  signer: "GCEHRGFVDX45AGQSBS6QIJN77UX4NMOEVQ4D7BPKP2HKRA2PK4A4D6NO"
+  source: "SANLODOS2PCSQKMI37EHQUKKW6M7WQQNM6YHS4BMBLWEVXGC2IS5HWTK"
+horizon:
+  url: "https://api.munahealth.com"
+client:
+  endpoint: "https://api.munahealth.com"
+submit:
+  endpoint: "https://api.munahealth.com"
+listener:
+  addr: :80
+cop:
+  disabled: true

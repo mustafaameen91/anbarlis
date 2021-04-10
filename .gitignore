@@ -1,6 +1,5 @@
 /node_modules
 .dockerignore
-.hgate.yaml
 Dockerfile
 package-lock.json
 /app/photos
