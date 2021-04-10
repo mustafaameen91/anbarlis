@@ -161,7 +161,7 @@ app.get("/api/image/:file", function (request, response) {
 });
 
 const staticFileMiddleware = express.static(__dirname + "/Archive");
-app.use(staticFileMiddleware);
+app.use("/api", staticFileMiddleware);
 app.use(
    history({
       disableDotRule: true,
