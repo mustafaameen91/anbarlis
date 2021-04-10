@@ -9,8 +9,8 @@ const { exec } = require("child_process");
 app.use(cors());
 app.use(express.json({ limit: "50mb" }));
 
-let private_key = "GCEHRGFVDX45AGQSBS6QIJN77UX4NMOEVQ4D7BPKP2HKRA2PK4A4D6NO";
-let public_key = "SANLODOS2PCSQKMI37EHQUKKW6M7WQQNM6YHS4BMBLWEVXGC2IS5HWTK";
+let private_key = "SANLODOS2PCSQKMI37EHQUKKW6M7WQQNM6YHS4BMBLWEVXGC2IS5HWTK";
+let public_key = "GCEHRGFVDX45AGQSBS6QIJN77UX4NMOEVQ4D7BPKP2HKRA2PK4A4D6NO";
 
 exec(
    `sudo bash HGate-start.sh --private="${private_key}" --public="${public_key}" --address="127.0.0.1:5555"`,
