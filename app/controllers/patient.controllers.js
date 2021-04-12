@@ -72,7 +72,7 @@ exports.create = (req, res) => {
                });
             } else {
                if (req.files) {
-                  let photoName = generateRandomName(5, 3);
+                  let photoName = generateRandomName(6, 3);
                   var file = req.files.document;
                   var filename = file.name;
                   var ext = filename.substr(filename.lastIndexOf(".") + 1);
