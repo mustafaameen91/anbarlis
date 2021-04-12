@@ -294,9 +294,11 @@ exports.findTestPhoto = async (req, res) => {
              <div style="height: 10px;"></div>
              <h4 style="font-size: 14px;margin: 4px 0px;font-family:'arial'">مختبر الصحة العامة / وحدة كوفيد19</h4>
              <h4 style="font-size: 14px;margin: 4px 0px;font-family:'arial'">المختبر مجاز من قبل وزارة الصحة العراقية</h4>
+             <h4 style="font-size: 14px;margin: 4px 0px;font-family:'arial'">محافظة الانبار</h4>
              <div style="height: 20px;"></div>
              <h4 style="font-size: 14px;margin: 4px 0px;">Health Certificate</h4>
              <h4 style="direction: ltr;font-size: 14px;margin: 4px 0px;font-family:'arial'">2019 Novel Coronavirus Test</h4>
+             <h4 style="font-size: 14px;margin: 4px 0px;font-family:'arial'">Al-Anbar Governorate</h4>
              <h6 style="font-size: 14px;margin: 3px 0px;font-family:'arial'">this certificate has been granted to the person upon their personal</h6>
              <h6 style="font-size: 14px;margin: 3px 0px;font-family:'arial'">request to whom it may concern and MOH is not responsible for any</h6>
              <h6 style="font-size: 14px;margin: 3px 0px;font-family:'arial'">consequences resulting from this</h6>
