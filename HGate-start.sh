@@ -9,8 +9,8 @@ EX_ERROR=1
 config=".hgate.yaml"
 apiHost="https://api.munahealth.com"
 address=
-publicKey="GDS2GDKKUTLO23UWNRHRXRYSX7AGTD6TZME2K6PTPH3SHBPWAQ6VQPL2"
-privateKey="SCT2C22KSURLOXBEQJFQN6APITKIXUUSZLCMYWLZ6K735QODLPKYVR7R"
+publicKey=""
+privateKey=""
 
 usage() {
 cat << EOF
@@ -61,8 +61,8 @@ cop:
 EOM
 
 docker rm --force tokend-hgate || true
-docker run  -d --name tokend-hgate \
+docker run -d --name tokend-hgate \
   --env KV_VIPER_FILE=/config.yaml \
   --volume "$(pwd)/${config}":/config.yaml \
   --publish "${address:-"127.0.0.1:5555"}:80" \
-  tokend/hgate:1.1.9-m run
+  tokend/hgate:1.1.10-m run
