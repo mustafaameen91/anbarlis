@@ -655,6 +655,17 @@ exports.findTestPhoto = async (req, res) => {
    }
 };
 
+exports.findAll = (req, res) => {
+   Patient.getAll((err, data) => {
+      if (err)
+         res.status(500).send({
+            message:
+               err.message || "Some error occurred while retrieving patient.",
+         });
+      else res.send(data);
+   });
+};
+
 exports.findOne = (req, res) => {
    Patient.findById(req.params.id, (err, data) => {
       if (err) {
