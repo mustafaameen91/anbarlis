@@ -7,6 +7,8 @@ module.exports = (app) => {
 
    app.get("/api/nationality/:id", nationality.findOne);
 
+   app.get("/api/nationalityName/:name", nationality.getOneByNationalityName);
+
    app.put("/api/nationality/:id", nationality.update);
 
    app.delete("/api/nationality/:id", nationality.delete);

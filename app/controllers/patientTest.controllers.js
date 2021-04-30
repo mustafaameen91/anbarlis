@@ -55,6 +55,8 @@ exports.findByPatientId = (req, res) => {
                   patientId: test.patientId,
                   createdAt: test.createdAt,
                   createdBy: test.createdBy,
+                  userName: test.userName,
+                  roleId: test.roleId,
                   results: data.results.filter(
                      (result) => result.patientTestId == test.idPatientTest
                   ),

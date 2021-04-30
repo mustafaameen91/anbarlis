@@ -51,6 +51,35 @@ exports.create = (req, res) => {
             }
          }
       );
+   } else if (req.body.image) {
+      var base64Data = req.body.image.replace(/^data:image\/jpeg;base64,/, "");
+
+      require("fs").writeFile(
+         `./app/photos/${req.body.imageName}`,
+         base64Data,
+         "base64",
+         function (err) {
+            if (err) {
+               console.log(err);
+            } else {
+               const photo = new Photo({
+                  photoPath: `image/${req.body.imageName}`,
+                  patientId: 1,
+                  photoType: 0,
+               });
+
+               Photo.create(photo, (err, data) => {
+                  if (err)
+                     res.status(500).send({
+                        message:
+                           err.message ||
+                           "Some error occurred while upload the photo.",
+                     });
+                  else res.send(data);
+               });
+            }
+         }
+      );
    }
 };
 

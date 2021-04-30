@@ -50,6 +50,23 @@ exports.findOne = (req, res) => {
    });
 };
 
+exports.getOneByNationalityName = (req, res) => {
+   Nationality.findByNationalityName(req.params.name, (err, data) => {
+      if (err) {
+         if (err.kind === "not_found") {
+            res.status(404).send({
+               message: `Not found nationality with id ${req.params.name}.`,
+            });
+         } else {
+            res.status(500).send({
+               message:
+                  "Error retrieving nationality with id " + req.params.name,
+            });
+         }
+      } else res.send(data);
+   });
+};
+
 exports.update = (req, res) => {
    if (!req.body) {
       res.status(400).send({
