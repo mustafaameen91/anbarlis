@@ -25,25 +25,3 @@ module.exports = (app) => {
 
    app.delete("/api/patients", patient.deleteAll);
 };
-
-// CHECK IF PASSPORT EXISTS
-// axios.get('https://api.munahealth.com/identities?filter[passport]=' + this.data.documentId)
-// .then(async res => {
-//    let ptnt = res.data.data;
-//    if (ptnt.length > 0) {
-//     this.data.munaId = ptnt[0].attributes.address
-//     this.saveToDb()
-//    } else {
-//     axios
-//     .post(munaApi + "identities", JSON.stringify(munaData))
-//     .then((response) => {
-//        this.data.munaId = response.data.data.id
-//        this.saveToDb()
-//     })
-//     .catch((error) => {
-//        console.log(error);
-//     })
-//    }
-//  }).finally(async () => {
-//   await loading.dismiss();
-//  });
