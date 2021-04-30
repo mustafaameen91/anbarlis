@@ -1,7 +1,6 @@
 /node_modules
 .dockerignore
 Dockerfile
-
 package-lock.json
 /app/photos
 /app/certificates
